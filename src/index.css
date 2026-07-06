@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(#e5e7eb, #d1d5db);
+  min-height: 100vh;
+}
+
+/* Layout */
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* Header Card */
+.header {
+  background: linear-gradient(#f9fafb, #e5e7eb);
+  border-radius: 14px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  margin-bottom: 50px;
+  border: 1px solid #d1d5db;
+}
+
+.bus-icon {
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  background: linear-gradient(#60a5fa, #2563eb);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #1f2937;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #4b5563;
+}
+
+/* Buttons */
+.roles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.role-btn {
+  border: none;
+  border-radius: 16px;
+  padding: 32px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.role-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+.role-btn .icon {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* Colors */
+.passenger {
+  background: linear-gradient(#60a5fa, #1d4ed8);
+}
+
+.driver {
+  background: linear-gradient(#4ade80, #15803d);
+}
+
+.admin {
+  background: linear-gradient(#c084fc, #6d28d9);
+}
+
+.role-btn h2 {
+  font-size: 20px;
+}
+
+.role-btn p {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .roles {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 
+
+
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: #dfe3e8;
+  min-height: 100vh;
+}
+
+/* ===== TOP BAR ===== */
+.topbar {
+  background: linear-gradient(#2f6df6, #0f4bd8);
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bus-circle {
+  background: white;
+  color: #2563eb;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar-title {
+  font-weight: bold;
+}
+
+.topbar-sub {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.change-btn {
+  background: #e5e7eb;
+  border: 1px solid #9ca3af;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ===== HOME BUTTON ===== */
+.home-btn {
+  margin: 12px 24px;
+  background: linear-gradient(#4f8cff, #2563eb);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* ===== MAIN ===== */
+.container {
+  padding: 20px 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Θέα οδηγού */
+.view-btn {
+  width: 100%;
+  background: linear-gradient(#4f8cff, #2563eb);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Αξιοθέατα */
+.green {
+  border: 2px solid #22c55e;
+  background: #dcfce7;
+}
+
+.badge {
+  background: #22c55e;
+  color: white;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Παραγγελίες */
+.orange {
+  border: 2px solid #f97316;
+  background: linear-gradient(#fff7ed, #fed7aa);
+}
+
+/* GPS */
+.purple {
+  border: 2px solid #a855f7;
+  background: #f3e8ff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.driver-view {
+  margin-top: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.driver-view img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
